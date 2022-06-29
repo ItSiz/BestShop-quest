@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -53,6 +54,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #A5A5A5;
+    scroll-behavior: smooth;
 }
 .menu a:hover {
     color: #000000;
@@ -68,6 +70,16 @@ header {
 }
 
 /* -- M A I N  P A G E -- */
+
+.btn_top {
+    width: 150px;
+    top: 150px;
+    border-radius: 50%;
+    background: #08A6E4;
+    display: flow;
+    position: absolute;
+    z-index: 2;
+}
 
 .main_page {
     display: flex;
@@ -198,6 +210,10 @@ header {
     margin-bottom: 37px;
 }
 
+.benefits_banner:nth-of-type(3) {
+    background: none;
+}
+
 .benefits_banner:nth-of-type(1) {
     margin-top: 106px;
 }
@@ -208,7 +224,18 @@ header {
 
 .banner_text {
     max-width: 416px;
+}
 
+.benefits_banner_last {
+    width: 623px;
+    height: 370px;
+    background: #FFFFFF;
+    position: relative;
+    right: 50px
+}
+
+.benefits_advertising {
+    padding-left: 35px;
 }
 
 .banner_text p {
@@ -217,20 +244,15 @@ header {
     margin-top: 30px;
 }
 
-/*
-.b_p:first-of-type::after {
-    content: "";
-    width: 332px;
-    height: 4px;
-    background-color: #08A6E4;
-    display: block;
-    margin-top: 50px;
-} */
+.benefits_banner_last p {
+    width: 553px;
+}
+
 .b_p1:after {
     content: "";
     width: 332px;
     height: 4px;
-    background-color: #08A6E4;
+    background-color: #FB3B64;
     display: block;
     margin-top: 50px;
 }
@@ -239,7 +261,7 @@ header {
     content: "";
     width: 332px;
     height: 4px;
-    background-color: #FB3B64;
+    background-color: #08A6E4;
     display: block;
     margin-top: 50px;
 }
@@ -252,27 +274,6 @@ header {
     display: block;
     margin-top: 50px;
 }
-}
-
-/*
-.banner_text span {
-    display: flex;
-    background: #FB3B64;
-    width: 328px;
-    height: 3px;
-    border-radius: 8px;
-    margin-top: 50px;
-}
-*/
-
-/*
-.banner_text span:first-of-type {
-    background: #08A6E4;
-}
-.banner_text span:last-of-type {
-    background: #55DFB4;
-}
-*/
 
 .banner_image {
     display: flex;
@@ -283,6 +284,9 @@ header {
 .banner_Macbook {
     width: 386px;
     height: 219px;
+    margin-top: 75px;
+    margin-right: 118px;
+    position: relative;
     z-index: 1;
 }
 
@@ -294,28 +298,45 @@ header {
     display: flex;
     transform: rotate(45deg);
     border-radius: 40px;
-    position: relative;
-    right: 120px;
-}
+    position: absolute;
+    margin-top: 76px;
+    margin-left: 210px;
 
-/* .banner_image .banner_squere {
-    background: #FB3B64;
-    width: 180px;
-    height: 180px;
-    display: flex;
-    transform: rotate(45deg);
-    border-radius: 40px;
-    position: relative;
-    right: 120px;
-    z-index: 0;
-} */
+}
 
 .banner_iphone {
     width: 426px;
     height: 328px;
+    z-index: 1;
+    position: relative;
+}
+.benefits_iphone:before {
+    content: "";
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 50px;
+    background: #08A6E4;
+    display: flex;
+    position: absolute;
 }
 
 .banner_trumpet {
     width: 296px;
     height: 208px;
+    z-index: 1;
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+
+.benefits_trumpet:before {
+    content: "";
+    width: 440px;
+    height: 370px;
+    background: #55DFB4;
+    display: flex;
+    position: absolute;
+    margin-left: -90px;
 }
