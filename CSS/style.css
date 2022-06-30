@@ -111,16 +111,19 @@ header {
     font-weight: bold;
     font-size: 16px;
     color: #ffffff;
-    box-shadow: 5px 10px 14px #07ACE629;
+    box-shadow: 5px 1px 27px rgba(7, 172, 230, .60);
     background: #08A6E4;
     padding: 22px 157px;
     border-radius: 40px;
 }
 
 .main_head a:hover {
-    color: black;
-    border: 2px solid black;
-    background: rgba(8, 166, 228, 0.63);
+    font-weight: bold;
+    box-shadow: 0 0 16px 10px rgba(7, 172, 230, .62);
+    background: #00b7ff;
+    font-size: 20px;
+    border-radius: 40px;
+    transform: scale(1.5);
 }
 
 .main_page img {
@@ -231,7 +234,8 @@ header {
     height: 370px;
     background: #FFFFFF;
     position: relative;
-    right: 50px
+    right: 50px;
+    border-radius: 5px;
 }
 
 .benefits_advertising {
@@ -339,4 +343,182 @@ header {
     display: flex;
     position: absolute;
     margin-left: -90px;
+    border-radius: 5px;
+}
+
+/* -- P R I C E S -- */
+
+.pricing_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_content {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.pricing_offer {
+    padding-top: 35px;
+    padding-bottom: 80px;
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+    width: 372px;
+    height: 461px;
+    text-align: center;
+    box-shadow: 5px 1px 27px rgba(251, 59, 100, .16);
+}
+
+.p_professional{
+    border: 1px solid #08A6E4;
+    box-shadow: 5px 1px 27px rgba(7, 172, 230, .16);
+    display: block;
+    text-align: center;
+}
+
+.pricing_head {
+    font-family: 'Raleway', sans-serif;
+}
+
+.pricing_offer h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.cost {
+    font-size: 46px;
+    color: #07ACE6;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.cost_basic {
+    margin-bottom: 90px;
+    color: #FB3B64;
+}
+
+.cost_premium {
+    color: #55DFB4;
+}
+
+.pricing_offer p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 61px;
+}
+
+.include {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.include li {
+    margin-bottom: 25px;
+}
+
+.include_ul li:before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../images/Checkmark-1.svg");
+}
+
+.basic_ul li:nth-of-type(4):before{
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background-image: url("../images/Close.svg");
+}
+
+.basic_ul li:nth-of-type(5):before{
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background-image: url("../images/Close.svg");
+}
+
+.professional_ul li:last-of-type:before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../images/Close.svg");
+}
+
+.pricing_professional {
+    margin: 0 40px;
+}
+
+.p_premium {
+    border: 1px solid #55DFB4;
+    box-shadow: 5px 1px 27px rgba(85, 223, 180, 0.16);
+}
+
+.pricing_button {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #08A6E4;
+    padding: 16px 64px;
+    border-radius: 25px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    top: 50px;
+}
+
+.btn_basic {
+    background: #FB3B64;
+}
+
+.btn_premium {
+    background: #55DFB4;
+}
+
+.pricing_basic:hover {
+    border-radius: 18px;
+    box-shadow: 5px 1px 27px rgb(251, 59, 100, .62);
+    transform: scale(1.1)
+}
+
+.pricing_professional:hover {
+    border-radius: 18px;
+    box-shadow: 5px 1px 27px rgba(7, 172, 230, .62);
+    transform: scale(1.1)
+}
+
+.pricing_premium:hover {
+    border-radius: 18px;
+    box-shadow: 5px 1px 27px rgba(85, 223, 180, 0.62);
+    transform: scale(1.1)
+}
+
+.btn_basic:hover {
+    box-shadow: 0 0 16px 10px rgb(251, 59, 100, .62);
+    background: #ff0b47;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.btn_professional:hover {
+    box-shadow: 0 0 16px 10px rgba(7, 172, 230, .62);
+    background: #00b7ff;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.btn_premium:hover {
+    box-shadow: 0 0 16px 10px rgba(85, 223, 180, 0.82);
+    background: #0fde9e;
+    font-size: 20px;
+    border-radius: 30px;
 }
