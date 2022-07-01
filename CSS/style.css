@@ -522,3 +522,115 @@ header {
     font-size: 20px;
     border-radius: 30px;
 }
+
+/* -- C O N T A C T -- */
+
+.contact_container {
+    margin-top: 100px;
+}
+
+.contact_container {
+    padding: 80px 100px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_text {
+    width: 50%;
+}
+
+.contact_form {
+    width: 50%;
+}
+
+.contact_text .contact_h2 {
+    margin-top: 0;
+}
+
+.contact_text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-top: 22px;
+}
+
+.contact_address {
+    margin-top: 42px;
+}
+
+.contact_text a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #A5A5A5;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.contact_address a:hover {
+    color: #08A6E4;
+    font-weight: bold;
+    margin-right: -9px;
+}
+
+.contact_phone {
+    margin-left: 20px;
+}
+
+/* -- F O R M -- */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_e-mail {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 30px 0;
+}
+
+.form_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_input {
+    border: none;
+    border-bottom: 1px solid #a5a5a5;
+    line-height: 30px;
+}
+
+.form_contact_data {
+    color: #08A6E4;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 11px;
+}
+
+.form_checkbox {
+    display: flex;
+}
+
+.form_checkbox p{
+    margin: 0 10px;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+}
+
+.btn_send {
+    background: #08A6E4 0% 0%;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px 97px;
+    margin-top: 20px;
+    display: flex;
+    align-self: flex-end;
+
+}

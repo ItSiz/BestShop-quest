@@ -165,14 +165,49 @@
 </section>
 <section class="contact" id="Contact">
     <div class="contact_container container">
-        <div class="contact_main">
-            <div class="contact_text">
-                <h2>Any Questions?</h2>
-
+        <div class="contact_text">
+            <h2 class="contact_h2">Any Questions?</h2>
+            <p class="contact_p">Leave your email address or contact us!</p>
+            <div class="contact_address">
+                <a href="mailto:info@bestshop.xyz" class="address">
+                    <img src="images/Mail%20Icon.svg" class="contact_mail" alt="mail"/>
+                            info@bestshop.xyz
+                </a>
+                <a href="tel:123456789" class="details__item">
+                    <img src="images/Phone%20Icon.svg" class="contact_phone" alt="phone"/>
+                    123 456 789
+                </a>
             </div>
         </div>
+        <form class="contact_form">
+            <div class="form_contact_data">
+                <div class="form_name">
+                    <label class="form_label" for="name">Name</label>
+                    <input type="text" class="form_input name" id="name"/>
+                </div>
+                <div class="form_e-mail">
+                    <label class="form_label" for="email">E-mail</label>
+                    <input type="email" class="form_input email" id="email"/>
+                </div>
+            </div>
+            <div class="form_consent">
+                <label class="form_checkbox">
+                    <input type="checkbox"/>
+                    <span class="checkbox"></span>
+                    <p class="consent_text">
+                        I hereby give consent for my personal data included in my
+                        application to be processed for the purposes of the recruitment
+                        process under the European Parliament’s and Council of the
+                        European Union Regulation on the Protection of Natural Persons as
+                        of 27 April 2016, with regard to the processing of personal data
+                        and on the free movement of such data, and repealing Directive
+                        95/46/EC (Data Protection Directive)
+                    </p>
+                </label>
+            </div>
+            <button type="submit" class="btn btn_send">Send</button>
+        </form>
     </div>
-
 </section>
 
 </body>
