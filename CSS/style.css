@@ -597,6 +597,8 @@ form {
     border: none;
     border-bottom: 1px solid #a5a5a5;
     line-height: 30px;
+    color: #707070;
+    font-weight: 700;
 }
 
 .form_contact_data {
@@ -608,9 +610,37 @@ form {
     font-size: 11px;
 }
 
+
 .form_checkbox {
     display: flex;
 }
+
+.form_checkbox input{
+    position: absolute;
+    opacity: none;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.form_checkbox span {
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form_checkbox input:checked + span{
+    background: url(../images/Checkmark.svg) no-repeat center;
+    background-size: 50%;
+    background-size: 13px;
+    border: 2px solid #00b7ff;
+    transition: 0.2s;
+  }
 
 .form_checkbox p{
     margin: 0 10px;
@@ -618,7 +648,9 @@ form {
     line-height: 17px;
     font-family: 'Open Sans', sans-serif;
     color: #707070;
+    text-align: justify;
 }
+
 
 .btn_send {
     background: #08A6E4 0% 0%;
@@ -633,4 +665,48 @@ form {
     display: flex;
     align-self: flex-end;
 
+}
+
+.btn_send:hover {
+    font-weight: bold;
+    box-shadow: 0 0 16px 10px rgb(7 172 230 / 62%);
+    background: #00b7ff;
+    border-radius: 40px;
+    transform: scale(1);
+}
+
+/* -- F O O T E R -- */
+
+.footer_contanier {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.bs_logo_small {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #08A6E4;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.footer_copy p {
+    text-align: left;
+    font: normal normal normal 11px/15px Open Sans;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+}
+
+.footer_copy p:first-of-type {
+    margin-top: 10px;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+}
+
+.footer_social a:last-of-type {
+    margin-left: 50px;
 }
